@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#f4f1e8">
+	<title>Report an Item | IIM BG</title>
+	<link rel="stylesheet" href="re.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="heady">
+		<a class="naam" href="index.html">
+			<img class="mark" src="cropped-iimbg_Logo_2026.png" alt="Indian Institute of Management Bodh Gaya">
+		</a>
+		<a class="backy" href="index.html"><span>←</span> Back to home</a>
+	</header>
+
+	<main class="reporty">
+		<section class="intro">
+			<p class="mainy"><span class="dot"></span> IIM Bodh Gaya campus desk</p>
+			<h1 id="reporttitle">Report a lost item</h1>
+			<p class="introc">Share a few details to help your campus community return it to you.</p>
+		</section>
+
+		<form class="formy" action="#" method="post">
+			<div class="formhead">
+				<span class="formnum">01</span>
+				<div>
+					<h2 id="fh">Your report</h2>
+					<p>Fields marked with <span>*</span> are required.</p>
+				</div>
+			</div>
+
+			<div class="fgrid">
+				<div class="fieldy">
+					<label for="name">Your name <span>*</span></label>
+					<input id="name" name="name" type="text" autocomplete="name" placeholder="e.g. Md Saheb Alam" required>
+				</div>
+
+				<div class="fieldy">
+					<label for="registrationid">Registration ID <span>*</span></label>
+					<input id="registrationid" name="registrationId" type="text" autocomplete="off" placeholder="Enter your IIM BG ID" required>
+				</div>
+
+				<div class="fieldy">
+					<label for="itemname">What did you lose? <span>*</span></label>
+					<input id="itemname" name="item" type="text" placeholder="e.g. Black wallet" required>
+				</div>
+
+				<div class="fieldy">
+					<label for="itemlocation">Where did you lose it? <span>*</span></label>
+					<input id="ilocation" name="location" type="text" placeholder="e.g. Library, first floor" required>
+				</div>
+
+				<div class="fieldy fwide">
+					<label for="phone">Phone number <span>*</span></label>
+					<input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Enter a number we can reach you at" required>
+				</div>
+
+				<div class="fieldy fwide">
+					<label for="item-picture">Picture of the item <span class="optional">Optional</span></label>
+					<input class="file-input" id="item-picture" name="picture" type="file" accept="image/*">
+					<span class="field-help" id="pichelp">Choose an image from your device.</span>
+				</div>
+			</div>
+
+			<div class="formact">
+				<p>Your contact details will help identify your item.</p>
+				<a class="submit-y" href="item.html">Submit report <span>↗</span></a>
+			</div>
+		</form>
+
+		<p class="prinote"><span >✳</span> Please report only items that belong to you.</p>
+	</main>
+
+	<footer class="footy">
+		<span>Lost & Found · IIM Bodh Gaya</span>
+		<span>Look out for one another.</span>
+	</footer>
+</body>
+</html>
